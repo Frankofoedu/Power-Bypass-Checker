@@ -1,0 +1,728 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="administrationDataSet2" targetNamespace="http://tempuri.org/administrationDataSet2.xsd" xmlns:mstns="http://tempuri.org/administrationDataSet2.xsd" xmlns="http://tempuri.org/administrationDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="administrationConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="administrationConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.projectMsc.My.MySettings.GlobalReference.Default.administrationConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CustomerDataTableAdapter" GeneratorDataComponentClassName="CustomerDataTableAdapter" Name="CustomerData" UserDataComponentName="CustomerDataTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="administrationConnectionString (MySettings)" DbObjectName="administration.dbo.CustomerData" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[CustomerData] WHERE (([Id] = @Original_Id) AND ((@IsNull_Applicant = 1 AND [Applicant] IS NULL) OR ([Applicant] = @Original_Applicant)) AND ((@IsNull_Surname = 1 AND [Surname] IS NULL) OR ([Surname] = @Original_Surname)) AND ((@IsNull_Other_Name = 1 AND [Other Name] IS NULL) OR ([Other Name] = @Original_Other_Name)) AND ((@IsNull_VillageTown = 1 AND [VillageTown] IS NULL) OR ([VillageTown] = @Original_VillageTown)) AND ((@IsNull_Address_Of_supply = 1 AND [Address Of supply] IS NULL) OR ([Address Of supply] = @Original_Address_Of_supply)) AND ((@IsNull_LGA = 1 AND [LGA] IS NULL) OR ([LGA] = @Original_LGA)) AND ((@IsNull_State = 1 AND [State] IS NULL) OR ([State] = @Original_State)) AND ((@IsNull_TelNo = 1 AND [TelNo] IS NULL) OR ([TelNo] = @Original_TelNo)) AND ((@IsNull_Alternate_No = 1 AND [Alternate No] IS NULL) OR ([Alternate No] = @Original_Alternate_No)) AND ((@IsNull_Type_Of_Premises = 1 AND [Type Of Premises] IS NULL) OR ([Type Of Premises] = @Original_Type_Of_Premises)) AND ((@IsNull_No_Of_Floors = 1 AND [No Of Floors] IS NULL) OR ([No Of Floors] = @Original_No_Of_Floors)) AND ((@IsNull_No_Of_Flats = 1 AND [No Of Flats] IS NULL) OR ([No Of Flats] = @Original_No_Of_Flats)) AND ((@IsNull_Use_Of_Premises = 1 AND [Use Of Premises] IS NULL) OR ([Use Of Premises] = @Original_Use_Of_Premises)) AND ((@IsNull_Name_On_The_Bill = 1 AND [Name On The Bill] IS NULL) OR ([Name On The Bill] = @Original_Name_On_The_Bill)) AND ((@IsNull_Account_Number = 1 AND [Account Number] IS NULL) OR ([Account Number] = @Original_Account_Number)) AND ((@IsNull_Old_Meter_Number = 1 AND [Old Meter Number] IS NULL) OR ([Old Meter Number] = @Original_Old_Meter_Number)) AND ((@IsNull_Tariff_Class = 1 AND [Tariff Class] IS NULL) OR ([Tariff Class] = @Original_Tariff_Class)) AND ((@IsNull_Existing_Connection_Details = 1 AND [Existing Connection Details] IS NULL) OR ([Existing Connection Details] = @Original_Existing_Connection_Details)) AND ((@IsNull_Current_Billing_Information = 1 AND [Current Billing Information] IS NULL) OR ([Current Billing Information] = @Original_Current_Billing_Information)) AND ((@IsNull_Meter_Type = 1 AND [Meter Type] IS NULL) OR ([Meter Type] = @Original_Meter_Type)) AND ((@IsNull_Type_Of_Connection = 1 AND [Type Of Connection] IS NULL) OR ([Type Of Connection] = @Original_Type_Of_Connection)) AND ((@IsNull_Total_Watts = 1 AND [Total Watts] IS NULL) OR ([Total Watts] = @Original_Total_Watts)) AND ((@IsNull_Owner_Name = 1 AND [Owner Name] IS NULL) OR ([Owner Name] = @Original_Owner_Name)) AND ((@IsNull_Owner_Address = 1 AND [Owner Address] IS NULL) OR ([Owner Address] = @Original_Owner_Address)) AND ((@IsNull_Owner_Town = 1 AND [Owner Town] IS NULL) OR ([Owner Town] = @Original_Owner_Town)) AND ((@IsNull_Owner_LGA = 1 AND [Owner LGA] IS NULL) OR ([Owner LGA] = @Original_Owner_LGA)) AND ((@IsNull_Owner_State = 1 AND [Owner State] IS NULL) OR ([Owner State] = @Original_Owner_State)) AND ((@IsNull_Owner_Tel_No = 1 AND [Owner Tel No] IS NULL) OR ([Owner Tel No] = @Original_Owner_Tel_No)) AND ((@IsNull_Owner_Alt_No = 1 AND [Owner Alt No] IS NULL) OR ([Owner Alt No] = @Original_Owner_Alt_No)) AND ((@IsNull_Owner_Email = 1 AND [Owner Email] IS NULL) OR ([Owner Email] = @Original_Owner_Email)) AND ((@IsNull_Owner_Previous_Occupant = 1 AND [Owner Previous Occupant] IS NULL) OR ([Owner Previous Occupant] = @Original_Owner_Previous_Occupant)) AND ((@IsNull_Owner_Account_Number = 1 AND [Owner Account Number] IS NULL) OR ([Owner Account Number] = @Original_Owner_Account_Number)) AND ((@IsNull_Owner_Meter_Number = 1 AND [Owner Meter Number] IS NULL) OR ([Owner Meter Number] = @Original_Owner_Meter_Number)) AND ((@IsNull_Office_Account_Number = 1 AND [Office Account Number] IS NULL) OR ([Office Account Number] = @Original_Office_Account_Number)) AND ((@IsNull_Office_Meter_No = 1 AND [Office Meter No] IS NULL) OR ([Office Meter No] = @Original_Office_Meter_No)) AND ((@IsNull_Office_Meter_Make = 1 AND [Office Meter Make] IS NULL) OR ([Office Meter Make] = @Original_Office_Meter_Make)) AND ((@IsNull_Office_Last_Bill_Amount = 1 AND [Office Last Bill Amount] IS NULL) OR ([Office Last Bill Amount] = @Original_Office_Last_Bill_Amount)) AND ((@IsNull_Office_Total_Outstanding = 1 AND [Office Total Outstanding] IS NULL) OR ([Office Total Outstanding] = @Original_Office_Total_Outstanding)) AND ((@IsNull_Office_Total_Installed_Load = 1 AND [Office Total Installed Load] IS NULL) OR ([Office Total Installed Load] = @Original_Office_Total_Installed_Load)) AND ((@IsNull_Office_Pole_Available = 1 AND [Office Pole Available] IS NULL) OR ([Office Pole Available] = @Original_Office_Pole_Available)) AND ((@IsNull_Office_Pole_Type = 1 AND [Office Pole Type] IS NULL) OR ([Office Pole Type] = @Original_Office_Pole_Type)) AND ((@IsNull_Office_Pole_Condition = 1 AND [Office Pole Condition] IS NULL) OR ([Office Pole Condition] = @Original_Office_Pole_Condition)) AND ((@IsNull_Office_Service_Line = 1 AND [Office Service Line] IS NULL) OR ([Office Service Line] = @Original_Office_Service_Line)) AND ((@IsNull_Office_Line_Wire_Condition = 1 AND [Office Line Wire Condition] IS NULL) OR ([Office Line Wire Condition] = @Original_Office_Line_Wire_Condition)) AND ((@IsNull_Office_Estimated_Load_Applied = 1 AND [Office Estimated Load Applied] IS NULL) OR ([Office Estimated Load Applied] = @Original_Office_Estimated_Load_Applied)) AND ((@IsNull_Office_Requested_Voltage_Type = 1 AND [Office Requested Voltage Type] IS NULL) OR ([Office Requested Voltage Type] = @Original_Office_Requested_Voltage_Type)) AND ((@IsNull_Office_Type_Of_Meter = 1 AND [Office Type Of Meter] IS NULL) OR ([Office Type Of Meter] = @Original_Office_Type_Of_Meter)) AND ((@IsNull_Number_Of_Units = 1 AND [Number Of Units] IS NULL) OR ([Number Of Units] = @Original_Number_Of_Units)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Applicant" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Applicant" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Applicant" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Applicant" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Surname" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Surname" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Surname" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Surname" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Other_Name" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Other Name" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Other_Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Other Name" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_VillageTown" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="VillageTown" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_VillageTown" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="VillageTown" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Address_Of_supply" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Address Of supply" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Address_Of_supply" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Address Of supply" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_LGA" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="LGA" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_LGA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="LGA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_State" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="State" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_State" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="State" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TelNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TelNo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_TelNo" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TelNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Alternate_No" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Alternate No" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Alternate_No" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Alternate No" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Type_Of_Premises" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Type Of Premises" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Type_Of_Premises" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Type Of Premises" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_No_Of_Floors" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="No Of Floors" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_No_Of_Floors" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="No Of Floors" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_No_Of_Flats" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="No Of Flats" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_No_Of_Flats" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="No Of Flats" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Use_Of_Premises" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Use Of Premises" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Use_Of_Premises" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Use Of Premises" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Name_On_The_Bill" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Name On The Bill" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Name_On_The_Bill" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Name On The Bill" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Account_Number" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Account Number" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Account_Number" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Account Number" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Old_Meter_Number" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Old Meter Number" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Old_Meter_Number" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Old Meter Number" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Tariff_Class" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Tariff Class" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Tariff_Class" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Tariff Class" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Existing_Connection_Details" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Existing Connection Details" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Existing_Connection_Details" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Existing Connection Details" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Current_Billing_Information" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Current Billing Information" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Current_Billing_Information" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Current Billing Information" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Meter_Type" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Meter Type" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Meter_Type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Meter Type" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Type_Of_Connection" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Type Of Connection" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Type_Of_Connection" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Type Of Connection" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Total_Watts" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Total Watts" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Total_Watts" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Total Watts" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Owner_Name" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Owner Name" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Owner_Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Name" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Owner_Address" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Owner Address" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Owner_Address" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Address" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Owner_Town" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Owner Town" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Owner_Town" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Town" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Owner_LGA" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Owner LGA" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Owner_LGA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner LGA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Owner_State" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Owner State" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Owner_State" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner State" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Owner_Tel_No" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Owner Tel No" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Owner_Tel_No" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Tel No" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Owner_Alt_No" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Owner Alt No" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Owner_Alt_No" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Alt No" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Owner_Email" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Owner Email" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Owner_Email" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Email" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Owner_Previous_Occupant" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Owner Previous Occupant" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Owner_Previous_Occupant" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Previous Occupant" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Owner_Account_Number" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Owner Account Number" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Owner_Account_Number" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Account Number" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Owner_Meter_Number" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Owner Meter Number" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Owner_Meter_Number" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Meter Number" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Office_Account_Number" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Office Account Number" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Office_Account_Number" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Account Number" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Office_Meter_No" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Office Meter No" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Office_Meter_No" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Meter No" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Office_Meter_Make" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Office Meter Make" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Office_Meter_Make" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Office Meter Make" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Office_Last_Bill_Amount" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Office Last Bill Amount" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Office_Last_Bill_Amount" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Office Last Bill Amount" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Office_Total_Outstanding" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Office Total Outstanding" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Office_Total_Outstanding" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Office Total Outstanding" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Office_Total_Installed_Load" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Office Total Installed Load" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Office_Total_Installed_Load" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Office Total Installed Load" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Office_Pole_Available" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Office Pole Available" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Office_Pole_Available" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Pole Available" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Office_Pole_Type" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Office Pole Type" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Office_Pole_Type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Pole Type" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Office_Pole_Condition" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Office Pole Condition" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Office_Pole_Condition" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Pole Condition" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Office_Service_Line" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Office Service Line" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Office_Service_Line" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Service Line" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Office_Line_Wire_Condition" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Office Line Wire Condition" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Office_Line_Wire_Condition" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Line Wire Condition" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Office_Estimated_Load_Applied" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Office Estimated Load Applied" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Office_Estimated_Load_Applied" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Estimated Load Applied" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Office_Requested_Voltage_Type" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Office Requested Voltage Type" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Office_Requested_Voltage_Type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Requested Voltage Type" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Office_Type_Of_Meter" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Office Type Of Meter" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Office_Type_Of_Meter" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Type Of Meter" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Number_Of_Units" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Number Of Units" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Number_Of_Units" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Number Of Units" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[CustomerData] ([Applicant], [Surname], [Other Name], [VillageTown], [Address Of supply], [LGA], [State], [TelNo], [Alternate No], [Type Of Premises], [No Of Floors], [No Of Flats], [Use Of Premises], [Name On The Bill], [Account Number], [Old Meter Number], [Tariff Class], [Existing Connection Details], [Current Billing Information], [Meter Type], [Type Of Connection], [Total Watts], [Owner Name], [Owner Address], [Owner Town], [Owner LGA], [Owner State], [Owner Tel No], [Owner Alt No], [Owner Email], [Owner Previous Occupant], [Owner Account Number], [Owner Meter Number], [Office Account Number], [Office Meter No], [Office Meter Make], [Office Last Bill Amount], [Office Total Outstanding], [Office Total Installed Load], [Office Pole Available], [Office Pole Type], [Office Pole Condition], [Office Service Line], [Office Line Wire Condition], [Office Estimated Load Applied], [Office Requested Voltage Type], [Office Type Of Meter], [Number Of Units]) VALUES (@Applicant, @Surname, @Other_Name, @VillageTown, @Address_Of_supply, @LGA, @State, @TelNo, @Alternate_No, @Type_Of_Premises, @No_Of_Floors, @No_Of_Flats, @Use_Of_Premises, @Name_On_The_Bill, @Account_Number, @Old_Meter_Number, @Tariff_Class, @Existing_Connection_Details, @Current_Billing_Information, @Meter_Type, @Type_Of_Connection, @Total_Watts, @Owner_Name, @Owner_Address, @Owner_Town, @Owner_LGA, @Owner_State, @Owner_Tel_No, @Owner_Alt_No, @Owner_Email, @Owner_Previous_Occupant, @Owner_Account_Number, @Owner_Meter_Number, @Office_Account_Number, @Office_Meter_No, @Office_Meter_Make, @Office_Last_Bill_Amount, @Office_Total_Outstanding, @Office_Total_Installed_Load, @Office_Pole_Available, @Office_Pole_Type, @Office_Pole_Condition, @Office_Service_Line, @Office_Line_Wire_Condition, @Office_Estimated_Load_Applied, @Office_Requested_Voltage_Type, @Office_Type_Of_Meter, @Number_Of_Units);
+SELECT Id, Applicant, Surname, [Other Name], VillageTown, [Address Of supply], LGA, State, TelNo, [Alternate No], [Type Of Premises], [No Of Floors], [No Of Flats], [Use Of Premises], [Name On The Bill], [Account Number], [Old Meter Number], [Tariff Class], [Existing Connection Details], [Current Billing Information], [Meter Type], [Type Of Connection], [Total Watts], [Owner Name], [Owner Address], [Owner Town], [Owner LGA], [Owner State], [Owner Tel No], [Owner Alt No], [Owner Email], [Owner Previous Occupant], [Owner Account Number], [Owner Meter Number], [Office Account Number], [Office Meter No], [Office Meter Make], [Office Last Bill Amount], [Office Total Outstanding], [Office Total Installed Load], [Office Pole Available], [Office Pole Type], [Office Pole Condition], [Office Service Line], [Office Line Wire Condition], [Office Estimated Load Applied], [Office Requested Voltage Type], [Office Type Of Meter], [Number Of Units] FROM CustomerData WHERE (Id = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Applicant" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Applicant" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Surname" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Surname" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Other_Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Other Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@VillageTown" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="VillageTown" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Address_Of_supply" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Address Of supply" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@LGA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="LGA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@State" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="State" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TelNo" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TelNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Alternate_No" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Alternate No" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Type_Of_Premises" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Type Of Premises" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@No_Of_Floors" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="No Of Floors" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@No_Of_Flats" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="No Of Flats" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Use_Of_Premises" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Use Of Premises" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Name_On_The_Bill" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Name On The Bill" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Account_Number" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Account Number" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Old_Meter_Number" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Old Meter Number" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Tariff_Class" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Tariff Class" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Existing_Connection_Details" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Existing Connection Details" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Current_Billing_Information" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Current Billing Information" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Meter_Type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Meter Type" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Type_Of_Connection" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Type Of Connection" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Total_Watts" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Total Watts" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Owner_Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Owner_Address" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Address" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Owner_Town" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Town" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Owner_LGA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner LGA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Owner_State" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner State" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Owner_Tel_No" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Tel No" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Owner_Alt_No" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Alt No" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Owner_Email" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Email" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Owner_Previous_Occupant" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Previous Occupant" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Owner_Account_Number" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Account Number" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Owner_Meter_Number" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Meter Number" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Office_Account_Number" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Account Number" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Office_Meter_No" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Meter No" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Office_Meter_Make" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Office Meter Make" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Office_Last_Bill_Amount" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Office Last Bill Amount" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Office_Total_Outstanding" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Office Total Outstanding" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Office_Total_Installed_Load" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Office Total Installed Load" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Office_Pole_Available" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Pole Available" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Office_Pole_Type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Pole Type" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Office_Pole_Condition" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Pole Condition" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Office_Service_Line" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Service Line" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Office_Line_Wire_Condition" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Line Wire Condition" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Office_Estimated_Load_Applied" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Estimated Load Applied" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Office_Requested_Voltage_Type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Requested Voltage Type" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Office_Type_Of_Meter" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Type Of Meter" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Number_Of_Units" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Number Of Units" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id, Applicant, Surname, [Other Name], VillageTown, [Address Of supply], LGA, State, TelNo, [Alternate No], [Type Of Premises], [No Of Floors], [No Of Flats], [Use Of Premises], [Name On The Bill], [Account Number], [Old Meter Number], [Tariff Class], [Existing Connection Details], [Current Billing Information], [Meter Type], [Type Of Connection], [Total Watts], [Owner Name], [Owner Address], [Owner Town], [Owner LGA], [Owner State], [Owner Tel No], [Owner Alt No], [Owner Email], [Owner Previous Occupant], [Owner Account Number], [Owner Meter Number], [Office Account Number], [Office Meter No], [Office Meter Make], [Office Last Bill Amount], [Office Total Outstanding], [Office Total Installed Load], [Office Pole Available], [Office Pole Type], [Office Pole Condition], [Office Service Line], [Office Line Wire Condition], [Office Estimated Load Applied], [Office Requested Voltage Type], [Office Type Of Meter], [Number Of Units] FROM dbo.CustomerData</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[CustomerData] SET [Applicant] = @Applicant, [Surname] = @Surname, [Other Name] = @Other_Name, [VillageTown] = @VillageTown, [Address Of supply] = @Address_Of_supply, [LGA] = @LGA, [State] = @State, [TelNo] = @TelNo, [Alternate No] = @Alternate_No, [Type Of Premises] = @Type_Of_Premises, [No Of Floors] = @No_Of_Floors, [No Of Flats] = @No_Of_Flats, [Use Of Premises] = @Use_Of_Premises, [Name On The Bill] = @Name_On_The_Bill, [Account Number] = @Account_Number, [Old Meter Number] = @Old_Meter_Number, [Tariff Class] = @Tariff_Class, [Existing Connection Details] = @Existing_Connection_Details, [Current Billing Information] = @Current_Billing_Information, [Meter Type] = @Meter_Type, [Type Of Connection] = @Type_Of_Connection, [Total Watts] = @Total_Watts, [Owner Name] = @Owner_Name, [Owner Address] = @Owner_Address, [Owner Town] = @Owner_Town, [Owner LGA] = @Owner_LGA, [Owner State] = @Owner_State, [Owner Tel No] = @Owner_Tel_No, [Owner Alt No] = @Owner_Alt_No, [Owner Email] = @Owner_Email, [Owner Previous Occupant] = @Owner_Previous_Occupant, [Owner Account Number] = @Owner_Account_Number, [Owner Meter Number] = @Owner_Meter_Number, [Office Account Number] = @Office_Account_Number, [Office Meter No] = @Office_Meter_No, [Office Meter Make] = @Office_Meter_Make, [Office Last Bill Amount] = @Office_Last_Bill_Amount, [Office Total Outstanding] = @Office_Total_Outstanding, [Office Total Installed Load] = @Office_Total_Installed_Load, [Office Pole Available] = @Office_Pole_Available, [Office Pole Type] = @Office_Pole_Type, [Office Pole Condition] = @Office_Pole_Condition, [Office Service Line] = @Office_Service_Line, [Office Line Wire Condition] = @Office_Line_Wire_Condition, [Office Estimated Load Applied] = @Office_Estimated_Load_Applied, [Office Requested Voltage Type] = @Office_Requested_Voltage_Type, [Office Type Of Meter] = @Office_Type_Of_Meter, [Number Of Units] = @Number_Of_Units WHERE (([Id] = @Original_Id) AND ((@IsNull_Applicant = 1 AND [Applicant] IS NULL) OR ([Applicant] = @Original_Applicant)) AND ((@IsNull_Surname = 1 AND [Surname] IS NULL) OR ([Surname] = @Original_Surname)) AND ((@IsNull_Other_Name = 1 AND [Other Name] IS NULL) OR ([Other Name] = @Original_Other_Name)) AND ((@IsNull_VillageTown = 1 AND [VillageTown] IS NULL) OR ([VillageTown] = @Original_VillageTown)) AND ((@IsNull_Address_Of_supply = 1 AND [Address Of supply] IS NULL) OR ([Address Of supply] = @Original_Address_Of_supply)) AND ((@IsNull_LGA = 1 AND [LGA] IS NULL) OR ([LGA] = @Original_LGA)) AND ((@IsNull_State = 1 AND [State] IS NULL) OR ([State] = @Original_State)) AND ((@IsNull_TelNo = 1 AND [TelNo] IS NULL) OR ([TelNo] = @Original_TelNo)) AND ((@IsNull_Alternate_No = 1 AND [Alternate No] IS NULL) OR ([Alternate No] = @Original_Alternate_No)) AND ((@IsNull_Type_Of_Premises = 1 AND [Type Of Premises] IS NULL) OR ([Type Of Premises] = @Original_Type_Of_Premises)) AND ((@IsNull_No_Of_Floors = 1 AND [No Of Floors] IS NULL) OR ([No Of Floors] = @Original_No_Of_Floors)) AND ((@IsNull_No_Of_Flats = 1 AND [No Of Flats] IS NULL) OR ([No Of Flats] = @Original_No_Of_Flats)) AND ((@IsNull_Use_Of_Premises = 1 AND [Use Of Premises] IS NULL) OR ([Use Of Premises] = @Original_Use_Of_Premises)) AND ((@IsNull_Name_On_The_Bill = 1 AND [Name On The Bill] IS NULL) OR ([Name On The Bill] = @Original_Name_On_The_Bill)) AND ((@IsNull_Account_Number = 1 AND [Account Number] IS NULL) OR ([Account Number] = @Original_Account_Number)) AND ((@IsNull_Old_Meter_Number = 1 AND [Old Meter Number] IS NULL) OR ([Old Meter Number] = @Original_Old_Meter_Number)) AND ((@IsNull_Tariff_Class = 1 AND [Tariff Class] IS NULL) OR ([Tariff Class] = @Original_Tariff_Class)) AND ((@IsNull_Existing_Connection_Details = 1 AND [Existing Connection Details] IS NULL) OR ([Existing Connection Details] = @Original_Existing_Connection_Details)) AND ((@IsNull_Current_Billing_Information = 1 AND [Current Billing Information] IS NULL) OR ([Current Billing Information] = @Original_Current_Billing_Information)) AND ((@IsNull_Meter_Type = 1 AND [Meter Type] IS NULL) OR ([Meter Type] = @Original_Meter_Type)) AND ((@IsNull_Type_Of_Connection = 1 AND [Type Of Connection] IS NULL) OR ([Type Of Connection] = @Original_Type_Of_Connection)) AND ((@IsNull_Total_Watts = 1 AND [Total Watts] IS NULL) OR ([Total Watts] = @Original_Total_Watts)) AND ((@IsNull_Owner_Name = 1 AND [Owner Name] IS NULL) OR ([Owner Name] = @Original_Owner_Name)) AND ((@IsNull_Owner_Address = 1 AND [Owner Address] IS NULL) OR ([Owner Address] = @Original_Owner_Address)) AND ((@IsNull_Owner_Town = 1 AND [Owner Town] IS NULL) OR ([Owner Town] = @Original_Owner_Town)) AND ((@IsNull_Owner_LGA = 1 AND [Owner LGA] IS NULL) OR ([Owner LGA] = @Original_Owner_LGA)) AND ((@IsNull_Owner_State = 1 AND [Owner State] IS NULL) OR ([Owner State] = @Original_Owner_State)) AND ((@IsNull_Owner_Tel_No = 1 AND [Owner Tel No] IS NULL) OR ([Owner Tel No] = @Original_Owner_Tel_No)) AND ((@IsNull_Owner_Alt_No = 1 AND [Owner Alt No] IS NULL) OR ([Owner Alt No] = @Original_Owner_Alt_No)) AND ((@IsNull_Owner_Email = 1 AND [Owner Email] IS NULL) OR ([Owner Email] = @Original_Owner_Email)) AND ((@IsNull_Owner_Previous_Occupant = 1 AND [Owner Previous Occupant] IS NULL) OR ([Owner Previous Occupant] = @Original_Owner_Previous_Occupant)) AND ((@IsNull_Owner_Account_Number = 1 AND [Owner Account Number] IS NULL) OR ([Owner Account Number] = @Original_Owner_Account_Number)) AND ((@IsNull_Owner_Meter_Number = 1 AND [Owner Meter Number] IS NULL) OR ([Owner Meter Number] = @Original_Owner_Meter_Number)) AND ((@IsNull_Office_Account_Number = 1 AND [Office Account Number] IS NULL) OR ([Office Account Number] = @Original_Office_Account_Number)) AND ((@IsNull_Office_Meter_No = 1 AND [Office Meter No] IS NULL) OR ([Office Meter No] = @Original_Office_Meter_No)) AND ((@IsNull_Office_Meter_Make = 1 AND [Office Meter Make] IS NULL) OR ([Office Meter Make] = @Original_Office_Meter_Make)) AND ((@IsNull_Office_Last_Bill_Amount = 1 AND [Office Last Bill Amount] IS NULL) OR ([Office Last Bill Amount] = @Original_Office_Last_Bill_Amount)) AND ((@IsNull_Office_Total_Outstanding = 1 AND [Office Total Outstanding] IS NULL) OR ([Office Total Outstanding] = @Original_Office_Total_Outstanding)) AND ((@IsNull_Office_Total_Installed_Load = 1 AND [Office Total Installed Load] IS NULL) OR ([Office Total Installed Load] = @Original_Office_Total_Installed_Load)) AND ((@IsNull_Office_Pole_Available = 1 AND [Office Pole Available] IS NULL) OR ([Office Pole Available] = @Original_Office_Pole_Available)) AND ((@IsNull_Office_Pole_Type = 1 AND [Office Pole Type] IS NULL) OR ([Office Pole Type] = @Original_Office_Pole_Type)) AND ((@IsNull_Office_Pole_Condition = 1 AND [Office Pole Condition] IS NULL) OR ([Office Pole Condition] = @Original_Office_Pole_Condition)) AND ((@IsNull_Office_Service_Line = 1 AND [Office Service Line] IS NULL) OR ([Office Service Line] = @Original_Office_Service_Line)) AND ((@IsNull_Office_Line_Wire_Condition = 1 AND [Office Line Wire Condition] IS NULL) OR ([Office Line Wire Condition] = @Original_Office_Line_Wire_Condition)) AND ((@IsNull_Office_Estimated_Load_Applied = 1 AND [Office Estimated Load Applied] IS NULL) OR ([Office Estimated Load Applied] = @Original_Office_Estimated_Load_Applied)) AND ((@IsNull_Office_Requested_Voltage_Type = 1 AND [Office Requested Voltage Type] IS NULL) OR ([Office Requested Voltage Type] = @Original_Office_Requested_Voltage_Type)) AND ((@IsNull_Office_Type_Of_Meter = 1 AND [Office Type Of Meter] IS NULL) OR ([Office Type Of Meter] = @Original_Office_Type_Of_Meter)) AND ((@IsNull_Number_Of_Units = 1 AND [Number Of Units] IS NULL) OR ([Number Of Units] = @Original_Number_Of_Units)));
+SELECT Id, Applicant, Surname, [Other Name], VillageTown, [Address Of supply], LGA, State, TelNo, [Alternate No], [Type Of Premises], [No Of Floors], [No Of Flats], [Use Of Premises], [Name On The Bill], [Account Number], [Old Meter Number], [Tariff Class], [Existing Connection Details], [Current Billing Information], [Meter Type], [Type Of Connection], [Total Watts], [Owner Name], [Owner Address], [Owner Town], [Owner LGA], [Owner State], [Owner Tel No], [Owner Alt No], [Owner Email], [Owner Previous Occupant], [Owner Account Number], [Owner Meter Number], [Office Account Number], [Office Meter No], [Office Meter Make], [Office Last Bill Amount], [Office Total Outstanding], [Office Total Installed Load], [Office Pole Available], [Office Pole Type], [Office Pole Condition], [Office Service Line], [Office Line Wire Condition], [Office Estimated Load Applied], [Office Requested Voltage Type], [Office Type Of Meter], [Number Of Units] FROM CustomerData WHERE (Id = @Id)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Applicant" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Applicant" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Surname" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Surname" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Other_Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Other Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@VillageTown" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="VillageTown" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Address_Of_supply" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Address Of supply" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@LGA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="LGA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@State" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="State" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TelNo" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TelNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Alternate_No" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Alternate No" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Type_Of_Premises" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Type Of Premises" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@No_Of_Floors" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="No Of Floors" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@No_Of_Flats" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="No Of Flats" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Use_Of_Premises" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Use Of Premises" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Name_On_The_Bill" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Name On The Bill" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Account_Number" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Account Number" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Old_Meter_Number" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Old Meter Number" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Tariff_Class" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Tariff Class" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Existing_Connection_Details" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Existing Connection Details" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Current_Billing_Information" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Current Billing Information" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Meter_Type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Meter Type" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Type_Of_Connection" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Type Of Connection" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Total_Watts" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Total Watts" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Owner_Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Owner_Address" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Address" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Owner_Town" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Town" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Owner_LGA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner LGA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Owner_State" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner State" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Owner_Tel_No" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Tel No" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Owner_Alt_No" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Alt No" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Owner_Email" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Email" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Owner_Previous_Occupant" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Previous Occupant" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Owner_Account_Number" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Account Number" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Owner_Meter_Number" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Meter Number" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Office_Account_Number" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Account Number" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Office_Meter_No" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Meter No" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Office_Meter_Make" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Office Meter Make" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Office_Last_Bill_Amount" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Office Last Bill Amount" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Office_Total_Outstanding" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Office Total Outstanding" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Office_Total_Installed_Load" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Office Total Installed Load" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Office_Pole_Available" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Pole Available" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Office_Pole_Type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Pole Type" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Office_Pole_Condition" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Pole Condition" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Office_Service_Line" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Service Line" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Office_Line_Wire_Condition" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Line Wire Condition" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Office_Estimated_Load_Applied" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Estimated Load Applied" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Office_Requested_Voltage_Type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Requested Voltage Type" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Office_Type_Of_Meter" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Type Of Meter" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Number_Of_Units" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Number Of Units" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Applicant" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Applicant" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Applicant" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Applicant" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Surname" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Surname" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Surname" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Surname" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Other_Name" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Other Name" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Other_Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Other Name" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_VillageTown" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="VillageTown" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_VillageTown" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="VillageTown" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Address_Of_supply" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Address Of supply" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Address_Of_supply" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Address Of supply" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_LGA" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="LGA" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_LGA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="LGA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_State" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="State" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_State" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="State" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TelNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TelNo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_TelNo" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TelNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Alternate_No" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Alternate No" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Alternate_No" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Alternate No" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Type_Of_Premises" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Type Of Premises" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Type_Of_Premises" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Type Of Premises" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_No_Of_Floors" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="No Of Floors" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_No_Of_Floors" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="No Of Floors" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_No_Of_Flats" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="No Of Flats" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_No_Of_Flats" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="No Of Flats" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Use_Of_Premises" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Use Of Premises" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Use_Of_Premises" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Use Of Premises" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Name_On_The_Bill" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Name On The Bill" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Name_On_The_Bill" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Name On The Bill" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Account_Number" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Account Number" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Account_Number" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Account Number" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Old_Meter_Number" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Old Meter Number" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Old_Meter_Number" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Old Meter Number" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Tariff_Class" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Tariff Class" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Tariff_Class" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Tariff Class" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Existing_Connection_Details" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Existing Connection Details" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Existing_Connection_Details" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Existing Connection Details" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Current_Billing_Information" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Current Billing Information" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Current_Billing_Information" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Current Billing Information" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Meter_Type" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Meter Type" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Meter_Type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Meter Type" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Type_Of_Connection" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Type Of Connection" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Type_Of_Connection" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Type Of Connection" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Total_Watts" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Total Watts" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Total_Watts" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Total Watts" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Owner_Name" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Owner Name" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Owner_Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Name" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Owner_Address" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Owner Address" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Owner_Address" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Address" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Owner_Town" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Owner Town" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Owner_Town" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Town" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Owner_LGA" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Owner LGA" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Owner_LGA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner LGA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Owner_State" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Owner State" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Owner_State" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner State" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Owner_Tel_No" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Owner Tel No" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Owner_Tel_No" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Tel No" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Owner_Alt_No" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Owner Alt No" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Owner_Alt_No" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Alt No" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Owner_Email" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Owner Email" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Owner_Email" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Email" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Owner_Previous_Occupant" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Owner Previous Occupant" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Owner_Previous_Occupant" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Previous Occupant" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Owner_Account_Number" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Owner Account Number" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Owner_Account_Number" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Account Number" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Owner_Meter_Number" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Owner Meter Number" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Owner_Meter_Number" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Owner Meter Number" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Office_Account_Number" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Office Account Number" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Office_Account_Number" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Account Number" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Office_Meter_No" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Office Meter No" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Office_Meter_No" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Meter No" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Office_Meter_Make" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Office Meter Make" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Office_Meter_Make" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Office Meter Make" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Office_Last_Bill_Amount" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Office Last Bill Amount" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Office_Last_Bill_Amount" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Office Last Bill Amount" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Office_Total_Outstanding" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Office Total Outstanding" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Office_Total_Outstanding" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Office Total Outstanding" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Office_Total_Installed_Load" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Office Total Installed Load" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Office_Total_Installed_Load" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Office Total Installed Load" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Office_Pole_Available" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Office Pole Available" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Office_Pole_Available" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Pole Available" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Office_Pole_Type" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Office Pole Type" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Office_Pole_Type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Pole Type" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Office_Pole_Condition" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Office Pole Condition" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Office_Pole_Condition" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Pole Condition" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Office_Service_Line" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Office Service Line" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Office_Service_Line" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Service Line" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Office_Line_Wire_Condition" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Office Line Wire Condition" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Office_Line_Wire_Condition" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Line Wire Condition" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Office_Estimated_Load_Applied" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Office Estimated Load Applied" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Office_Estimated_Load_Applied" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Estimated Load Applied" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Office_Requested_Voltage_Type" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Office Requested Voltage Type" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Office_Requested_Voltage_Type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Requested Voltage Type" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Office_Type_Of_Meter" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Office Type Of Meter" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Office_Type_Of_Meter" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Office Type Of Meter" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Number_Of_Units" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Number Of Units" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Number_Of_Units" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Number Of Units" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Id" ColumnName="Id" DataSourceName="administration.dbo.CustomerData" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Id" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="Applicant" DataSetColumn="Applicant" />
+              <Mapping SourceColumn="Surname" DataSetColumn="Surname" />
+              <Mapping SourceColumn="Other Name" DataSetColumn="Other Name" />
+              <Mapping SourceColumn="VillageTown" DataSetColumn="VillageTown" />
+              <Mapping SourceColumn="Address Of supply" DataSetColumn="Address Of supply" />
+              <Mapping SourceColumn="LGA" DataSetColumn="LGA" />
+              <Mapping SourceColumn="State" DataSetColumn="State" />
+              <Mapping SourceColumn="TelNo" DataSetColumn="TelNo" />
+              <Mapping SourceColumn="Alternate No" DataSetColumn="Alternate No" />
+              <Mapping SourceColumn="Type Of Premises" DataSetColumn="Type Of Premises" />
+              <Mapping SourceColumn="No Of Floors" DataSetColumn="No Of Floors" />
+              <Mapping SourceColumn="No Of Flats" DataSetColumn="No Of Flats" />
+              <Mapping SourceColumn="Use Of Premises" DataSetColumn="Use Of Premises" />
+              <Mapping SourceColumn="Name On The Bill" DataSetColumn="Name On The Bill" />
+              <Mapping SourceColumn="Account Number" DataSetColumn="Account Number" />
+              <Mapping SourceColumn="Old Meter Number" DataSetColumn="Old Meter Number" />
+              <Mapping SourceColumn="Tariff Class" DataSetColumn="Tariff Class" />
+              <Mapping SourceColumn="Existing Connection Details" DataSetColumn="Existing Connection Details" />
+              <Mapping SourceColumn="Current Billing Information" DataSetColumn="Current Billing Information" />
+              <Mapping SourceColumn="Meter Type" DataSetColumn="Meter Type" />
+              <Mapping SourceColumn="Type Of Connection" DataSetColumn="Type Of Connection" />
+              <Mapping SourceColumn="Total Watts" DataSetColumn="Total Watts" />
+              <Mapping SourceColumn="Owner Name" DataSetColumn="Owner Name" />
+              <Mapping SourceColumn="Owner Address" DataSetColumn="Owner Address" />
+              <Mapping SourceColumn="Owner Town" DataSetColumn="Owner Town" />
+              <Mapping SourceColumn="Owner LGA" DataSetColumn="Owner LGA" />
+              <Mapping SourceColumn="Owner State" DataSetColumn="Owner State" />
+              <Mapping SourceColumn="Owner Tel No" DataSetColumn="Owner Tel No" />
+              <Mapping SourceColumn="Owner Alt No" DataSetColumn="Owner Alt No" />
+              <Mapping SourceColumn="Owner Email" DataSetColumn="Owner Email" />
+              <Mapping SourceColumn="Owner Previous Occupant" DataSetColumn="Owner Previous Occupant" />
+              <Mapping SourceColumn="Owner Account Number" DataSetColumn="Owner Account Number" />
+              <Mapping SourceColumn="Owner Meter Number" DataSetColumn="Owner Meter Number" />
+              <Mapping SourceColumn="Office Account Number" DataSetColumn="Office Account Number" />
+              <Mapping SourceColumn="Office Meter No" DataSetColumn="Office Meter No" />
+              <Mapping SourceColumn="Office Meter Make" DataSetColumn="Office Meter Make" />
+              <Mapping SourceColumn="Office Last Bill Amount" DataSetColumn="Office Last Bill Amount" />
+              <Mapping SourceColumn="Office Total Outstanding" DataSetColumn="Office Total Outstanding" />
+              <Mapping SourceColumn="Office Total Installed Load" DataSetColumn="Office Total Installed Load" />
+              <Mapping SourceColumn="Office Pole Available" DataSetColumn="Office Pole Available" />
+              <Mapping SourceColumn="Office Pole Type" DataSetColumn="Office Pole Type" />
+              <Mapping SourceColumn="Office Pole Condition" DataSetColumn="Office Pole Condition" />
+              <Mapping SourceColumn="Office Service Line" DataSetColumn="Office Service Line" />
+              <Mapping SourceColumn="Office Line Wire Condition" DataSetColumn="Office Line Wire Condition" />
+              <Mapping SourceColumn="Office Estimated Load Applied" DataSetColumn="Office Estimated Load Applied" />
+              <Mapping SourceColumn="Office Requested Voltage Type" DataSetColumn="Office Requested Voltage Type" />
+              <Mapping SourceColumn="Office Type Of Meter" DataSetColumn="Office Type Of Meter" />
+              <Mapping SourceColumn="Number Of Units" DataSetColumn="Number Of Units" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="administrationDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="administrationDataSet2" msprop:Generator_UserDSName="administrationDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CustomerData" msprop:Generator_TableClassName="CustomerDataDataTable" msprop:Generator_TableVarName="tableCustomerData" msprop:Generator_TablePropName="CustomerData" msprop:Generator_RowDeletingName="CustomerDataRowDeleting" msprop:Generator_RowChangingName="CustomerDataRowChanging" msprop:Generator_RowEvHandlerName="CustomerDataRowChangeEventHandler" msprop:Generator_RowDeletedName="CustomerDataRowDeleted" msprop:Generator_UserTableName="CustomerData" msprop:Generator_RowChangedName="CustomerDataRowChanged" msprop:Generator_RowEvArgName="CustomerDataRowChangeEvent" msprop:Generator_RowClassName="CustomerDataRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="Applicant" msprop:Generator_ColumnVarNameInTable="columnApplicant" msprop:Generator_ColumnPropNameInRow="Applicant" msprop:Generator_ColumnPropNameInTable="ApplicantColumn" msprop:Generator_UserColumnName="Applicant" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Surname" msprop:Generator_ColumnVarNameInTable="columnSurname" msprop:Generator_ColumnPropNameInRow="Surname" msprop:Generator_ColumnPropNameInTable="SurnameColumn" msprop:Generator_UserColumnName="Surname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Other_x0020_Name" msprop:Generator_ColumnVarNameInTable="columnOther_Name" msprop:Generator_ColumnPropNameInRow="Other_Name" msprop:Generator_ColumnPropNameInTable="Other_NameColumn" msprop:Generator_UserColumnName="Other Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VillageTown" msprop:Generator_ColumnVarNameInTable="columnVillageTown" msprop:Generator_ColumnPropNameInRow="VillageTown" msprop:Generator_ColumnPropNameInTable="VillageTownColumn" msprop:Generator_UserColumnName="VillageTown" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Address_x0020_Of_x0020_supply" msprop:Generator_ColumnVarNameInTable="columnAddress_Of_supply" msprop:Generator_ColumnPropNameInRow="Address_Of_supply" msprop:Generator_ColumnPropNameInTable="Address_Of_supplyColumn" msprop:Generator_UserColumnName="Address Of supply" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LGA" msprop:Generator_ColumnVarNameInTable="columnLGA" msprop:Generator_ColumnPropNameInRow="LGA" msprop:Generator_ColumnPropNameInTable="LGAColumn" msprop:Generator_UserColumnName="LGA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="State" msprop:Generator_ColumnVarNameInTable="columnState" msprop:Generator_ColumnPropNameInRow="State" msprop:Generator_ColumnPropNameInTable="StateColumn" msprop:Generator_UserColumnName="State" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TelNo" msprop:Generator_ColumnVarNameInTable="columnTelNo" msprop:Generator_ColumnPropNameInRow="TelNo" msprop:Generator_ColumnPropNameInTable="TelNoColumn" msprop:Generator_UserColumnName="TelNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Alternate_x0020_No" msprop:Generator_ColumnVarNameInTable="columnAlternate_No" msprop:Generator_ColumnPropNameInRow="Alternate_No" msprop:Generator_ColumnPropNameInTable="Alternate_NoColumn" msprop:Generator_UserColumnName="Alternate No" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Type_x0020_Of_x0020_Premises" msprop:Generator_ColumnVarNameInTable="columnType_Of_Premises" msprop:Generator_ColumnPropNameInRow="Type_Of_Premises" msprop:Generator_ColumnPropNameInTable="Type_Of_PremisesColumn" msprop:Generator_UserColumnName="Type Of Premises" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="No_x0020_Of_x0020_Floors" msprop:Generator_ColumnVarNameInTable="columnNo_Of_Floors" msprop:Generator_ColumnPropNameInRow="No_Of_Floors" msprop:Generator_ColumnPropNameInTable="No_Of_FloorsColumn" msprop:Generator_UserColumnName="No Of Floors" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="No_x0020_Of_x0020_Flats" msprop:Generator_ColumnVarNameInTable="columnNo_Of_Flats" msprop:Generator_ColumnPropNameInRow="No_Of_Flats" msprop:Generator_ColumnPropNameInTable="No_Of_FlatsColumn" msprop:Generator_UserColumnName="No Of Flats" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Use_x0020_Of_x0020_Premises" msprop:Generator_ColumnVarNameInTable="columnUse_Of_Premises" msprop:Generator_ColumnPropNameInRow="Use_Of_Premises" msprop:Generator_ColumnPropNameInTable="Use_Of_PremisesColumn" msprop:Generator_UserColumnName="Use Of Premises" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name_x0020_On_x0020_The_x0020_Bill" msprop:Generator_ColumnVarNameInTable="columnName_On_The_Bill" msprop:Generator_ColumnPropNameInRow="Name_On_The_Bill" msprop:Generator_ColumnPropNameInTable="Name_On_The_BillColumn" msprop:Generator_UserColumnName="Name On The Bill" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Account_x0020_Number" msprop:Generator_ColumnVarNameInTable="columnAccount_Number" msprop:Generator_ColumnPropNameInRow="Account_Number" msprop:Generator_ColumnPropNameInTable="Account_NumberColumn" msprop:Generator_UserColumnName="Account Number" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Old_x0020_Meter_x0020_Number" msprop:Generator_ColumnVarNameInTable="columnOld_Meter_Number" msprop:Generator_ColumnPropNameInRow="Old_Meter_Number" msprop:Generator_ColumnPropNameInTable="Old_Meter_NumberColumn" msprop:Generator_UserColumnName="Old Meter Number" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tariff_x0020_Class" msprop:Generator_ColumnVarNameInTable="columnTariff_Class" msprop:Generator_ColumnPropNameInRow="Tariff_Class" msprop:Generator_ColumnPropNameInTable="Tariff_ClassColumn" msprop:Generator_UserColumnName="Tariff Class" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Existing_x0020_Connection_x0020_Details" msprop:Generator_ColumnVarNameInTable="columnExisting_Connection_Details" msprop:Generator_ColumnPropNameInRow="Existing_Connection_Details" msprop:Generator_ColumnPropNameInTable="Existing_Connection_DetailsColumn" msprop:Generator_UserColumnName="Existing Connection Details" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Current_x0020_Billing_x0020_Information" msprop:Generator_ColumnVarNameInTable="columnCurrent_Billing_Information" msprop:Generator_ColumnPropNameInRow="Current_Billing_Information" msprop:Generator_ColumnPropNameInTable="Current_Billing_InformationColumn" msprop:Generator_UserColumnName="Current Billing Information" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Meter_x0020_Type" msprop:Generator_ColumnVarNameInTable="columnMeter_Type" msprop:Generator_ColumnPropNameInRow="Meter_Type" msprop:Generator_ColumnPropNameInTable="Meter_TypeColumn" msprop:Generator_UserColumnName="Meter Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Type_x0020_Of_x0020_Connection" msprop:Generator_ColumnVarNameInTable="columnType_Of_Connection" msprop:Generator_ColumnPropNameInRow="Type_Of_Connection" msprop:Generator_ColumnPropNameInTable="Type_Of_ConnectionColumn" msprop:Generator_UserColumnName="Type Of Connection" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Total_x0020_Watts" msprop:Generator_ColumnVarNameInTable="columnTotal_Watts" msprop:Generator_ColumnPropNameInRow="Total_Watts" msprop:Generator_ColumnPropNameInTable="Total_WattsColumn" msprop:Generator_UserColumnName="Total Watts" type="xs:int" minOccurs="0" />
+              <xs:element name="Owner_x0020_Name" msprop:Generator_ColumnVarNameInTable="columnOwner_Name" msprop:Generator_ColumnPropNameInRow="Owner_Name" msprop:Generator_ColumnPropNameInTable="Owner_NameColumn" msprop:Generator_UserColumnName="Owner Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Owner_x0020_Address" msprop:Generator_ColumnVarNameInTable="columnOwner_Address" msprop:Generator_ColumnPropNameInRow="Owner_Address" msprop:Generator_ColumnPropNameInTable="Owner_AddressColumn" msprop:Generator_UserColumnName="Owner Address" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Owner_x0020_Town" msprop:Generator_ColumnVarNameInTable="columnOwner_Town" msprop:Generator_ColumnPropNameInRow="Owner_Town" msprop:Generator_ColumnPropNameInTable="Owner_TownColumn" msprop:Generator_UserColumnName="Owner Town" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Owner_x0020_LGA" msprop:Generator_ColumnVarNameInTable="columnOwner_LGA" msprop:Generator_ColumnPropNameInRow="Owner_LGA" msprop:Generator_ColumnPropNameInTable="Owner_LGAColumn" msprop:Generator_UserColumnName="Owner LGA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Owner_x0020_State" msprop:Generator_ColumnVarNameInTable="columnOwner_State" msprop:Generator_ColumnPropNameInRow="Owner_State" msprop:Generator_ColumnPropNameInTable="Owner_StateColumn" msprop:Generator_UserColumnName="Owner State" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Owner_x0020_Tel_x0020_No" msprop:Generator_ColumnVarNameInTable="columnOwner_Tel_No" msprop:Generator_ColumnPropNameInRow="Owner_Tel_No" msprop:Generator_ColumnPropNameInTable="Owner_Tel_NoColumn" msprop:Generator_UserColumnName="Owner Tel No" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Owner_x0020_Alt_x0020_No" msprop:Generator_ColumnVarNameInTable="columnOwner_Alt_No" msprop:Generator_ColumnPropNameInRow="Owner_Alt_No" msprop:Generator_ColumnPropNameInTable="Owner_Alt_NoColumn" msprop:Generator_UserColumnName="Owner Alt No" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Owner_x0020_Email" msprop:Generator_ColumnVarNameInTable="columnOwner_Email" msprop:Generator_ColumnPropNameInRow="Owner_Email" msprop:Generator_ColumnPropNameInTable="Owner_EmailColumn" msprop:Generator_UserColumnName="Owner Email" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Owner_x0020_Previous_x0020_Occupant" msprop:Generator_ColumnVarNameInTable="columnOwner_Previous_Occupant" msprop:Generator_ColumnPropNameInRow="Owner_Previous_Occupant" msprop:Generator_ColumnPropNameInTable="Owner_Previous_OccupantColumn" msprop:Generator_UserColumnName="Owner Previous Occupant" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Owner_x0020_Account_x0020_Number" msprop:Generator_ColumnVarNameInTable="columnOwner_Account_Number" msprop:Generator_ColumnPropNameInRow="Owner_Account_Number" msprop:Generator_ColumnPropNameInTable="Owner_Account_NumberColumn" msprop:Generator_UserColumnName="Owner Account Number" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Owner_x0020_Meter_x0020_Number" msprop:Generator_ColumnVarNameInTable="columnOwner_Meter_Number" msprop:Generator_ColumnPropNameInRow="Owner_Meter_Number" msprop:Generator_ColumnPropNameInTable="Owner_Meter_NumberColumn" msprop:Generator_UserColumnName="Owner Meter Number" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Office_x0020_Account_x0020_Number" msprop:Generator_ColumnVarNameInTable="columnOffice_Account_Number" msprop:Generator_ColumnPropNameInRow="Office_Account_Number" msprop:Generator_ColumnPropNameInTable="Office_Account_NumberColumn" msprop:Generator_UserColumnName="Office Account Number" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Office_x0020_Meter_x0020_No" msprop:Generator_ColumnVarNameInTable="columnOffice_Meter_No" msprop:Generator_ColumnPropNameInRow="Office_Meter_No" msprop:Generator_ColumnPropNameInTable="Office_Meter_NoColumn" msprop:Generator_UserColumnName="Office Meter No" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Office_x0020_Meter_x0020_Make" msprop:Generator_ColumnVarNameInTable="columnOffice_Meter_Make" msprop:Generator_ColumnPropNameInRow="Office_Meter_Make" msprop:Generator_ColumnPropNameInTable="Office_Meter_MakeColumn" msprop:Generator_UserColumnName="Office Meter Make" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Office_x0020_Last_x0020_Bill_x0020_Amount" msprop:Generator_ColumnVarNameInTable="columnOffice_Last_Bill_Amount" msprop:Generator_ColumnPropNameInRow="Office_Last_Bill_Amount" msprop:Generator_ColumnPropNameInTable="Office_Last_Bill_AmountColumn" msprop:Generator_UserColumnName="Office Last Bill Amount" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Office_x0020_Total_x0020_Outstanding" msprop:Generator_ColumnVarNameInTable="columnOffice_Total_Outstanding" msprop:Generator_ColumnPropNameInRow="Office_Total_Outstanding" msprop:Generator_ColumnPropNameInTable="Office_Total_OutstandingColumn" msprop:Generator_UserColumnName="Office Total Outstanding" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Office_x0020_Total_x0020_Installed_x0020_Load" msprop:Generator_ColumnVarNameInTable="columnOffice_Total_Installed_Load" msprop:Generator_ColumnPropNameInRow="Office_Total_Installed_Load" msprop:Generator_ColumnPropNameInTable="Office_Total_Installed_LoadColumn" msprop:Generator_UserColumnName="Office Total Installed Load" type="xs:int" minOccurs="0" />
+              <xs:element name="Office_x0020_Pole_x0020_Available" msprop:Generator_ColumnVarNameInTable="columnOffice_Pole_Available" msprop:Generator_ColumnPropNameInRow="Office_Pole_Available" msprop:Generator_ColumnPropNameInTable="Office_Pole_AvailableColumn" msprop:Generator_UserColumnName="Office Pole Available" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Office_x0020_Pole_x0020_Type" msprop:Generator_ColumnVarNameInTable="columnOffice_Pole_Type" msprop:Generator_ColumnPropNameInRow="Office_Pole_Type" msprop:Generator_ColumnPropNameInTable="Office_Pole_TypeColumn" msprop:Generator_UserColumnName="Office Pole Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Office_x0020_Pole_x0020_Condition" msprop:Generator_ColumnVarNameInTable="columnOffice_Pole_Condition" msprop:Generator_ColumnPropNameInRow="Office_Pole_Condition" msprop:Generator_ColumnPropNameInTable="Office_Pole_ConditionColumn" msprop:Generator_UserColumnName="Office Pole Condition" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Office_x0020_Service_x0020_Line" msprop:Generator_ColumnVarNameInTable="columnOffice_Service_Line" msprop:Generator_ColumnPropNameInRow="Office_Service_Line" msprop:Generator_ColumnPropNameInTable="Office_Service_LineColumn" msprop:Generator_UserColumnName="Office Service Line" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Office_x0020_Line_x0020_Wire_x0020_Condition" msprop:Generator_ColumnVarNameInTable="columnOffice_Line_Wire_Condition" msprop:Generator_ColumnPropNameInRow="Office_Line_Wire_Condition" msprop:Generator_ColumnPropNameInTable="Office_Line_Wire_ConditionColumn" msprop:Generator_UserColumnName="Office Line Wire Condition" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Office_x0020_Estimated_x0020_Load_x0020_Applied" msprop:Generator_ColumnVarNameInTable="columnOffice_Estimated_Load_Applied" msprop:Generator_ColumnPropNameInRow="Office_Estimated_Load_Applied" msprop:Generator_ColumnPropNameInTable="Office_Estimated_Load_AppliedColumn" msprop:Generator_UserColumnName="Office Estimated Load Applied" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Office_x0020_Requested_x0020_Voltage_x0020_Type" msprop:Generator_ColumnVarNameInTable="columnOffice_Requested_Voltage_Type" msprop:Generator_ColumnPropNameInRow="Office_Requested_Voltage_Type" msprop:Generator_ColumnPropNameInTable="Office_Requested_Voltage_TypeColumn" msprop:Generator_UserColumnName="Office Requested Voltage Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Office_x0020_Type_x0020_Of_x0020_Meter" msprop:Generator_ColumnVarNameInTable="columnOffice_Type_Of_Meter" msprop:Generator_ColumnPropNameInRow="Office_Type_Of_Meter" msprop:Generator_ColumnPropNameInTable="Office_Type_Of_MeterColumn" msprop:Generator_UserColumnName="Office Type Of Meter" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Number_x0020_Of_x0020_Units" msprop:Generator_ColumnVarNameInTable="columnNumber_Of_Units" msprop:Generator_ColumnPropNameInRow="Number_Of_Units" msprop:Generator_ColumnPropNameInTable="Number_Of_UnitsColumn" msprop:Generator_UserColumnName="Number Of Units" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CustomerData" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

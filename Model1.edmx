@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AdminTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="username" Type="varchar" MaxLength="50" />
+          <Property Name="password" Type="varchar" MaxLength="50" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="CustomerData">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Applicant" Type="nvarchar" MaxLength="50" />
+          <Property Name="Surname" Type="nvarchar" MaxLength="50" />
+          <Property Name="Other Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="VillageTown" Type="nvarchar" MaxLength="50" />
+          <Property Name="Address Of supply" Type="nvarchar" MaxLength="50" />
+          <Property Name="LGA" Type="nvarchar" MaxLength="50" />
+          <Property Name="State" Type="nvarchar" MaxLength="50" />
+          <Property Name="TelNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="Alternate No" Type="nvarchar" MaxLength="50" />
+          <Property Name="Type Of Premises" Type="nvarchar" MaxLength="50" />
+          <Property Name="Use Of Premises" Type="nvarchar" MaxLength="50" />
+          <Property Name="Name On The Bill" Type="nvarchar" MaxLength="50" />
+          <Property Name="Account Number" Type="nvarchar" MaxLength="50" />
+          <Property Name="Old Meter Number" Type="nvarchar" MaxLength="50" />
+          <Property Name="Tariff Class" Type="nvarchar" MaxLength="50" />
+          <Property Name="Existing Connection Details" Type="nvarchar" MaxLength="50" />
+          <Property Name="Current Billing Information" Type="nvarchar" MaxLength="50" />
+          <Property Name="Type Of Connection" Type="nvarchar" MaxLength="50" />
+          <Property Name="Total Watts" Type="int" />
+          <Property Name="Amounts Purchased" Type="int" />
+          <Property Name="Token Days" Type="date" />
+          <Property Name="Grace Value" Type="date" />
+          <Property Name="Card No" Type="nchar" MaxLength="11" />
+          <Property Name="Rate" Type="int" />
+          <Property Name="Area Time Diff" Type="int" Nullable="false" />
+          <Property Name="Area" Type="nvarchar" MaxLength="50" />
+          <Property Name="Area State Start Time" Type="date" />
+          <Property Name="Area State End Time" Type="date" />
+          <Property Name="Area State" Type="bit" />
+        </EntityType>
+        <EntityContainer Name="ModelStoreContainer">
+          <EntitySet Name="AdminTable" EntityType="Self.AdminTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CustomerData" EntityType="Self.CustomerData" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="AdminTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="administrationEntities3" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AdminTables" EntityType="Self.AdminTable" />
+          <EntitySet Name="CustomerDatas" EntityType="Model.CustomerData" />
+        </EntityContainer>
+        <EntityType Name="CustomerData">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Applicant" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Surname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Other_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="VillageTown" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Address_Of_supply" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LGA" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="State" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TelNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Alternate_No" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Type_Of_Premises" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Use_Of_Premises" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Name_On_The_Bill" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Account_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Old_Meter_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Tariff_Class" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Existing_Connection_Details" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Current_Billing_Information" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Type_Of_Connection" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Total_Watts" Type="Int32" />
+          <Property Name="Amounts_Purchased" Type="Int32" />
+          <Property Name="Token_Days" Type="DateTime" Precision="0" />
+          <Property Name="Grace_Value" Type="DateTime" Precision="0" />
+          <Property Name="Card_No" Type="String" MaxLength="11" FixedLength="true" Unicode="true" />
+          <Property Name="Rate" Type="Int32" />
+          <Property Name="Area_Time_Diff" Type="Int32" Nullable="false" />
+          <Property Name="Area" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Area_State_Start_Time" Type="DateTime" Precision="0" />
+          <Property Name="Area_State_End_Time" Type="DateTime" Precision="0" />
+          <Property Name="Area_State" Type="Boolean" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="administrationEntities3">
+          <EntitySetMapping Name="AdminTables">
+            <EntityTypeMapping TypeName="Model.AdminTable">
+              <MappingFragment StoreEntitySet="AdminTable">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CustomerDatas">
+            <EntityTypeMapping TypeName="Model.CustomerData">
+              <MappingFragment StoreEntitySet="CustomerData">
+                <ScalarProperty Name="Area_State" ColumnName="Area State" />
+                <ScalarProperty Name="Area_State_End_Time" ColumnName="Area State End Time" />
+                <ScalarProperty Name="Area_State_Start_Time" ColumnName="Area State Start Time" />
+                <ScalarProperty Name="Area" ColumnName="Area" />
+                <ScalarProperty Name="Area_Time_Diff" ColumnName="Area Time Diff" />
+                <ScalarProperty Name="Rate" ColumnName="Rate" />
+                <ScalarProperty Name="Card_No" ColumnName="Card No" />
+                <ScalarProperty Name="Grace_Value" ColumnName="Grace Value" />
+                <ScalarProperty Name="Token_Days" ColumnName="Token Days" />
+                <ScalarProperty Name="Amounts_Purchased" ColumnName="Amounts Purchased" />
+                <ScalarProperty Name="Total_Watts" ColumnName="Total Watts" />
+                <ScalarProperty Name="Type_Of_Connection" ColumnName="Type Of Connection" />
+                <ScalarProperty Name="Current_Billing_Information" ColumnName="Current Billing Information" />
+                <ScalarProperty Name="Existing_Connection_Details" ColumnName="Existing Connection Details" />
+                <ScalarProperty Name="Tariff_Class" ColumnName="Tariff Class" />
+                <ScalarProperty Name="Old_Meter_Number" ColumnName="Old Meter Number" />
+                <ScalarProperty Name="Account_Number" ColumnName="Account Number" />
+                <ScalarProperty Name="Name_On_The_Bill" ColumnName="Name On The Bill" />
+                <ScalarProperty Name="Use_Of_Premises" ColumnName="Use Of Premises" />
+                <ScalarProperty Name="Type_Of_Premises" ColumnName="Type Of Premises" />
+                <ScalarProperty Name="Alternate_No" ColumnName="Alternate No" />
+                <ScalarProperty Name="TelNo" ColumnName="TelNo" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="LGA" ColumnName="LGA" />
+                <ScalarProperty Name="Address_Of_supply" ColumnName="Address Of supply" />
+                <ScalarProperty Name="VillageTown" ColumnName="VillageTown" />
+                <ScalarProperty Name="Other_Name" ColumnName="Other Name" />
+                <ScalarProperty Name="Surname" ColumnName="Surname" />
+                <ScalarProperty Name="Applicant" ColumnName="Applicant" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
